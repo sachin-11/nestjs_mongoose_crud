@@ -21,7 +21,7 @@ export class StudentService {
       { new: true },
     );
     if (!existingStudent) {
-      throw new NotFoundException(`Student #${studentId} not found`);
+      throw new NotFoundException(`Student #${studentId} not found..`);
     }
     return existingStudent;
   }
