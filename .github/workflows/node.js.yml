@@ -28,4 +28,4 @@ jobs:
     - run: npm run build --if-present
     - run: sudo apt update 
     - run: sudo docker build . -t sachinrasusigh/nest-crus
-    - run: docker run -dp 3000:3000 sachinrasusigh/nest-crus
+    - run: sudo docker run -dp 3000:3000 sachinrasusigh/nest-crus
