@@ -8,7 +8,9 @@ import { StudentController } from './student/student.controller';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost:27017/studentdb'),
+    MongooseModule.forRoot(
+      'mongodb+srv://sachin:sachin@cluster0.frgwbbs.mongodb.net/test',
+    ),
     MongooseModule.forFeature([{ name: 'Student', schema: StudentSchema }]),
   ],
   controllers: [AppController, StudentController],
