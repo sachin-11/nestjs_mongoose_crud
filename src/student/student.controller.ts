@@ -25,7 +25,7 @@ export class StudentController {
         createStudentDto,
       );
       return response.status(HttpStatus.CREATED).json({
-        message: 'Student has been created successfully',
+        message: 'Student has been created successfully.',
         newStudent,
       });
     } catch (err) {
