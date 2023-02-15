@@ -48,7 +48,7 @@ export class StudentController {
         updateStudentDto,
       );
       return response.status(HttpStatus.OK).json({
-        message: 'Student has been successfully updated',
+        message: 'Student has been successfully updated..',
         existingStudent,
       });
     } catch (err) {
